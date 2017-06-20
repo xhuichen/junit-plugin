@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'maven-jdk1.8'
-    }
-    
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
